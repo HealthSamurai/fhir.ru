@@ -1,0 +1,157 @@
+@import "../bower_components/normalize-scss/_normalize.scss";
+@import "../bower_components/susy/sass/_susy.scss";
+// @import "../bower_components/susy/sass/_susyone.scss";
+@import "../bower_components/compass-breakpoint/stylesheets/_breakpoint.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-mincer.scss";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "colors";
+@import "typography";
+
+
+body {
+	background-color:$yell-bg;
+}
+
+.header {
+	background:$white;
+	padding-top: 25px;
+	padding-bottom: 10px;
+
+	// .logo {
+	// 	width: 150px;
+	// }
+	img {
+		width: 150px;
+	}
+	.rus {
+		// display: inline;
+		color:$red;
+		
+		font-size:18px;
+		text-transform: uppercase;
+		font-weight: 500;
+		display:inline;
+		vertical-align:text-top;
+		padding: 15px;
+		letter-spacing: 0.03em;
+	}
+
+	nav {
+	padding:20px;
+	float:right;
+	li {
+		display: inline;
+		padding:15px;
+		list-style-type:none;
+	}
+	a {
+		color:$gray8;
+		// text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		border-bottom: 1px dotted;
+	}
+		a:hover {
+			color:$red;
+			border-bottom: 1px dotted;
+			text-decoration: none;
+		}
+	}
+
+}
+
+
+
+
+// INTRO
+.intro {
+	padding:60px 0 100px;
+	background-color:$white;
+	// height:500px;
+
+	.intro-text {
+		font-size: 18px;
+		font-weight: 200;
+	}
+	.intro-buttons a {
+		margin-right: 10px;
+	}
+
+}
+
+.video-intro {
+	background-color:$black-gray;
+	padding: 25px 0;
+}
+
+
+// PRODUCTS 
+.projects {
+	padding: 50px 0 150px 0;
+	.box {
+		// height:300px;
+		// background-color:$light-gray;
+		// border-radius: 5px;
+		img {
+			width:145px;
+			// background-image: url(img/miac.png);
+  	// 		background-color: red;
+			// background-blend-mode: multiply;
+		}
+		.netrika {
+			width:170px;
+			padding: 15px 0;
+		}
+	}
+}
+
+.person-box {
+	padding: 20px 0 5px 0;
+}
+
+// PERSONS
+.persons {
+	padding: 40px 0 30px 0;
+	
+	img {
+		filter: grayscale(60%);
+		width: 70px;
+	}
+
+	.border {
+		// border:1px solid $white;
+	}
+
+	.text-mute {
+      color:$gray9;
+    }
+    .media-body a {
+    	padding-right:5px;
+    }
+}
+
+// PERSONSR-RU
+.persons-ru {
+	background-color:$white;
+	padding: 30px 0 30px 0;
+	img {
+		width: 90px;
+		// filter: grayscale(100%);
+	}
+}
+
+.text-title {
+	color:$red;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+// FOOTER
+.footer {
+	background-color:$dark-gray;
+	color: $white;
+	padding:20px;
+	font-size:16px;
+}

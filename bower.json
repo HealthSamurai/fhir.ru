@@ -1,0 +1,11 @@
+{
+  "name": "samurai",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "susy": "~2.2.6",
+    "compass-breakpoint": "~2.6.1",
+    "normalize-scss": "~3.0.3",
+    "bootstrap-sass": "~3.3.6"
+  }
+}
