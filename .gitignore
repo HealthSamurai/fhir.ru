@@ -16,3 +16,5 @@ src/bower_components/
 src/libs/
 
 .gulpfile.js
+Icon?
+.DS_Store
