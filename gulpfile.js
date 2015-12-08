@@ -6,6 +6,7 @@
 ///////////////////////////////////////////////////
 // Required taskes
 // gulp build
+// gulp build:crean
 // gulp build:server
 ///////////////////////////////////////////////////
 var gulp 	  	    = require('gulp'),
@@ -46,7 +47,7 @@ gulp.task('styles', function () {
         browsers: ['last 3 versions'],
         cascade: false
       }))
-    // .pipe(rename('samurai.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('src/css'))
 
     .pipe(reload({stream:true}));
@@ -107,12 +108,12 @@ gulp.task('build:server', function() {
 // Build Tasks
 ///////////////////////////////////////////////////
 // clean build folder
-gulp.task('build:cleanfolder', function () {
+gulp.task('build:clean', function () {
   del(['build/**']);
 });
 
 // task to create build directory of all files
-gulp.task('build:copy', ['build:cleanfolder'], function(){
+gulp.task('build:copy', ['build:clean'], function(){
     return gulp.src('src/**/*/')
     .pipe(gulp.dest('build/'));
 });
@@ -122,10 +123,12 @@ gulp.task('build:copy', ['build:cleanfolder'], function(){
 gulp.task('build:remove', ['build:copy'], function () {
     del([
     'build/jade',
+    'build/css/!(*.min.css)',
     'build/js/!(*.min.js)',
     'build/bower_components',
-    'build/libs/normalize-scss',
-    'build/libs/normalize-css'
+    'build/libs'
+    // 'build/libs/normalize-scss'
+    // 'build/libs/normalize-css'
   ]);
 });
 

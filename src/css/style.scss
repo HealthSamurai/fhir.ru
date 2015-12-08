@@ -69,7 +69,6 @@ body {
 .intro {
 	padding:60px 0 100px;
 	background-color:$white;
-	// height:500px;
 
 	.intro-text {
 		font-size: 18px;
@@ -119,7 +118,10 @@ body {
 		filter: grayscale(60%);
 		width: 70px;
 	}
-
+	
+	.link-title {
+		padding-top: 20px;
+	}
 	.border {
 		// border:1px solid $white;
 	}
@@ -127,9 +129,9 @@ body {
 	.text-mute {
       color:$gray9;
     }
-    .media-body a {
-    	padding-right:5px;
-    }
+    // .media-body a {
+    // 	padding-top:15px;
+    // }
 }
 
 // PERSONSR-RU
