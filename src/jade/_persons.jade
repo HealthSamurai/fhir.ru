@@ -1,6 +1,7 @@
 .persons
   .container
     .row
+      a(name="community")
       h5.text-title.pull-left Редакционная команда HL7® FHIR®
       a.link-title.pull-right(href="http://fhir-ru.github.io/credits.html") Сообщество и благодарности
     .row
@@ -18,23 +19,31 @@
         .person-box
           .media
             a.media-left(href="#")
-              img.border.img-rounded(src="img/lloyd.png" alt="...")
+              img.border.img-rounded(src="img/josh.png" alt="...")
             .media-body
-              h4.media-heading Ллойд Маккензи
-              p.text-mute Information with architect with globally recognized expertise in HL7 data modeling and design data modeling.
+              h4.media-heading Джош Мандел
+              p.text-mute Physician, programmer, and would-be pâtissier/poet. Lead Architect for SMART and would-be Platforms.
           
         .person-box
           .media
             a.media-left(href="#")
-              img.border.img-rounded(src="img/evout.png" alt="...")
+              img.border.img-rounded(src="img/rene.png" alt="...")
             .media-body
-              h4.media-heading Эвут Крамер
-              p.text-mute Architect and software engineer. Consultancy and coaching for teams modelling and messaging.
+              h4.media-heading Рене Спронк
+              p.text-mute Provision of educational services related to standards for interoperability in healthcare all services to fhir IT.
       
       //- 2ND COL
       .col-md-4
 
-        .person-box  
+        .person-box
+          .media
+            a.media-left(href="#")
+              img.border.img-rounded(src="img/lloyd.png" alt="...")
+            .media-body
+              h4.media-heading Ллойд Маккензи
+              p.text-mute Information with architect with globally recognized expertise in HL7 data modeling and design data modeling.
+              
+         .person-box  
           .media
             a.media-left(href="#")
               img.border.img-rounded(src="img/james.png" alt="...")
@@ -45,22 +54,27 @@
         .person-box
           .media
             a.media-left(href="#")
-              img.border.img-rounded(src="img/josh.png" alt="...")
+              img.border.img-rounded(src="img/david.png" alt="...")
             .media-body
-              h4.media-heading Джош Мандел
-              p.text-mute Physician, programmer, and would-be pâtissier/poet. Lead Architect for SMART and would-be Platforms.
+              h4.media-heading Дэвид Хэй
+              p.text-mute In my self-appointed role as 'FHIR evangelist' ('FHIR Fanatic') at Orion Health and HL7 New Zealand.
         
-        .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/vien.png" alt="...")
-            .media-body
-              h4.media-heading Вьет Нгуен
-              p.text-mute Internist, pediatrician, clinical informaticist. CMIO @ Systems Made Simple. Amateur photographer/chef.
+        
       
       //- 3RD COL
       .col-md-4
         
+        .person-box
+          .media
+            a.media-left(href="#")
+              img.border.img-rounded(src="img/evout.png" alt="...")
+            .media-body
+              h4.media-heading Эвут Крамер
+              p.text-mute Architect and software engineer. Consultancy and coaching for teams modelling and messaging.
+        
+        
+        
+              
         .person-box
           .media
             a.media-left(href="#")
@@ -72,17 +86,13 @@
         .person-box
           .media
             a.media-left(href="#")
-              img.border.img-rounded(src="img/david.png" alt="...")
+              img.border.img-rounded(src="img/vien.png" alt="...")
             .media-body
-              h4.media-heading Дэвид Хэй
-              p.text-mute In my self-appointed role as 'FHIR evangelist' ('FHIR Fanatic') at Orion Health and HL7 New Zealand.
+              h4.media-heading Вьет Нгуен
+              p.text-mute Internist, pediatrician, clinical informaticist. CMIO @ Systems Made Simple. Amateur photographer/chef.
+              
         
-        .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/rene.png" alt="...")
-            .media-body
-              h4.media-heading Рене Спронк
-              p.text-mute Provision of educational services related to standards for interoperability in healthcare all services to fhir IT.
+        
+        
 
 include ./_video.jade
