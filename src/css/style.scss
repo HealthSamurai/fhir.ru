@@ -8,6 +8,7 @@
 @import "colors";
 @import "typography";
 @import "common";
+@import "media";
 
 body {
 	background-color:$white;
@@ -42,25 +43,23 @@ body {
 #bg {
 	position: absolute;
 	padding-top: 100px;
-	// background: $yell-bg url(../img/bg-test.png) no-repeat fixed;
+	// background: $yell-bg url(../img/bg-move.png) no-repeat fixed;
 	// height: 433px;
-	// margin:0 auto;
-	
+	left: 50%;
+    transform: translate(-50%, 0);
+     #l1 {
+ 	// background: $yell-bg url(../img/bg-test.png) no-repeat fixed;
+ 	position: relative;
+ 	z-index: 10;
+ 	// margin: 0 auto;
+ 	// padding-left: 5%;
+ 	// padding-top: 20px;
+ }	
 }
  
- #l1 {
- 	// background: $yell-bg url(../img/bg-test.png) no-repeat fixed;
- 	// z-index: 10;
- }
-
- #l1 {
- 	// background: $yell-bg url(../img/move-bg.png) no-repeat fixed;
- 	// z-index: 20;
- }
-
 // stellar.js
 #bg-bottom {
-	background: $yell-bg url(../img/move-bg.png) fixed;
+	background: $yell-bg url(../img/bg.png) fixed;
 	height: 800px;
 	// background-size:cover;
 	background-attachment: fixed;
@@ -68,12 +67,12 @@ body {
 
 
 
-.bg-pic {
-	background-attachment: fixed;
-	// min-width: 50%;
-	min-height: 300px;
-	position: relative;
-}
+// .bg-pic {
+// 	background-attachment: fixed;
+// 	// min-width: 50%;
+// 	min-height: 300px;
+// 	position: relative;
+// }
 
 // .stellar-ratio {
 // 	text-align: center;
@@ -88,7 +87,7 @@ body {
 
 #blog,
 #project {
-	background: $yell-bg url(../img/move-bg.png) fixed;
+	background: $yell-bg url(../img/bg.png) fixed;
 }
 
 
@@ -154,7 +153,7 @@ body {
 // INTRO
 
 #intro {
-	background: $yell-bg url(../img/move-bg.png) fixed;
+	background: $yell-bg url(../img/bg-blur.png) fixed;
 }
 
 .intro {
@@ -176,7 +175,7 @@ body {
 		text-align: center;
 		padding-top: 18px;
 
-		a {
+		.btn {
 			padding-top: 10px;
 			margin-right: 30px;
 		}
@@ -205,7 +204,13 @@ body {
 	}
 	
 	.link-title {
-		padding-top: 20px;
+		padding-top: 15px;
+		margin-right: 15px;
+		border-bottom: 1px dotted;
+		text-decoration: none;
+		&:hover {
+			color: $red;
+		}
 	}
 	.border {
 		// border:1px solid $white;
@@ -253,33 +258,50 @@ body {
 
 // BLOGS
 .blogs {
-	padding: 30px 0 40px 0;
+	padding: 60px 0;
 	background-color:$yell-bg;
 	.blog-box {
 		padding-bottom: 5px;
 	}
 	.blog-header {
-		font-size: 18px;
-		font-weight: 400;
-		text-decoration: underline;
+		font-size: 19px;
+		font-weight: 500;
+		text-decoration: none;
+		color: #555;
+		border-bottom: 1px dotted;
+		padding-bottom: 2px;
+		&:hover {
+			color:$red;
+		}
 	}
 }
 
 
 // PROJECTS
 .projects {
-	padding: 40px 0 50px 0;
+	padding: 60px 0;
 	background-color: $yell-bg;
 	.prj-box {
 		padding: 0 30px 0 0;
 		.prj-link {
 			font-size: 18px;
-			padding-bottom:20px;
-			text-decoration: underline;
+			line-height: 24px;
+			// letter-spacing: -1px;
+			font-weight: 400;
+			border-bottom: 1px dotted;
+			padding-bottom: 2px;
+			color: #555;
+			text-decoration: none;
+			&:hover {
+			color:darken($red, 10);
+			}
+		}
+
+		.prj-description {
+			padding-top: 20px;
 		}
 	}
 }
-
 
 // REFERENSER (SERVERS)
 .refs {
