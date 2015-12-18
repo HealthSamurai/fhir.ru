@@ -1,11 +1,11 @@
 {
-  "name": "samurai",
-  "version": "0.0.0",
+  "name": "starterkit",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
-    "susy": "~2.2.6",
-    "compass-breakpoint": "~2.6.1",
-    "normalize-scss": "~3.0.3",
-    "bootstrap-sass": "~3.3.6"
+    "jquery": "~2.1.4",
+    "animate.css": "~3.5.0",
+    "wow": "wow.js#~1.1.2",
+    "jquery.stellar": "stellar.js#~0.6.2"
   }
 }

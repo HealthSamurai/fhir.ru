@@ -57,7 +57,7 @@ gulp.task('styles', function () {
 // JavaScripts Tasks
 ///////////////////////////////////////////////////
 gulp.task('scripts', function() {
-  gulp.src('src/js/*.js')
+  gulp.src('src/js/main.js')
     .pipe(plumber())
     .pipe(uglify())
     .pipe(rename('main.min.js'))
@@ -71,18 +71,18 @@ gulp.task('scripts', function() {
 ///////////////////////////////////////////////////
 gulp.task('bower_scripts', function () {
   gulp.src('src/bower_components/**/*.min.js')
-    .pipe(flatten( {includeParents: 1} ))
-    // .pipe(uglify())
-    // .pipe(rename('vendor.min.js'))
-    .pipe(gulp.dest('src/libs'));
+  .pipe(flatten({ includeParents: 1}))
+  // .pipe(uglify())
+  // .pipe(rename('vendor.min.js'))
+  .pipe(gulp.dest('src/js/vendor'));
 });
 
 gulp.task('bower_styles', function () {
-  gulp.src(['src/bower_components/**/*.css'])
-    .pipe(flatten( { includeParents: 1} ))
-    // .pipe(minifyCSS())
-    // .pipe(rename('vendor.min.css'))
-    .pipe(gulp.dest('src/libs'));
+  gulp.src(['src/bower_components/**/*min.css'])
+  .pipe(flatten())
+  // .pipe(minifyCSS())
+  // .pipe(rename('vendor.min.css'))
+  .pipe(gulp.dest('src/css/vendor'));
 });
 
 ///////////////////////////////////////////////////
