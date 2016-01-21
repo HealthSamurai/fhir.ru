@@ -1,9 +1,4 @@
 # fhir.ru
 FHIR.RU
-TEST
-TEST
-TEST
-TEST
-TEST
-TEST
-TEST
+
+[![Build Status](https://travis-ci.org/HealthSamurai/fhir.ru.svg?branch=master)](https://travis-ci.org/HealthSamurai/fhir.ru)
