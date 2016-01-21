@@ -124,7 +124,9 @@ gulp.task('build:remove', ['build:copy'], function () {
     del([
     'build/jade',
     'build/css/!(*.min.css)',
+    'build/css/!vendor',
     'build/js/!(*.min.js)',
+    'build/js/!vendor',
     'build/bower_components',
     'build/libs'
     // 'build/libs/normalize-scss'
