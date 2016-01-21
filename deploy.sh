@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 cd ./build/
-touch ~/.ssh/travis_fhir_ru_deploy
+# touch ~/.ssh/travis_fhir_ru_deploy
+cp ~/travis_fhir_ru ~/.ssh/travis_fhir_ru_deploy
 chmod 600 ~/.ssh/travis_fhir_ru_deploy
 echo -e "Host github.com\n  IdentityFile ~/.ssh/travis_fhir_ru_deploy" > ~/.ssh/config
 git init
