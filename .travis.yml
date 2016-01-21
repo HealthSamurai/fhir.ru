@@ -1,9 +1,14 @@
+sudo: false
 language: node_js
 node_js:
   - "5.0"
-before_install: openssl aes-256-cbc -K $encrypted_899692261456_key -iv $encrypted_899692261456_iv -in travis_fhir_ru.enc -out ~/travis_fhir_ru -d
+before_install:
+  - openssl aes-256-cbc -K $encrypted_8811a2672d80_key -iv $encrypted_8811a2672d80_iv -in travis_fhir_ru_deploy.enc -out id_rsa -d 
 before_script:
   - npm install -g gulp
   - npm install
 script: gulp build
-after_success: bash ./deploy.sh
+after_success:
+  - chmod 600 id_rsa
+  - mv id_rsa ~/.ssh/id_rsa
+  - bash ./deploy.sh
