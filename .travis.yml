@@ -4,7 +4,7 @@ node_js:
 env:
   global:
     - GH_REF=github.com/HealthSamurai/fhir.ru.git
-before_install: openssl aes-256-cbc -K $encrypted_899692261456_key -iv $encrypted_899692261456_iv -in travis_fhir_ru.enc -out ~\/Desktop/travis_fhir_ru -d
+before_install: openssl aes-256-cbc -K $encrypted_899692261456_key -iv $encrypted_899692261456_iv -in travis_fhir_ru.enc -out ~/travis_fhir_ru -d
 before_script:
   - npm install -g gulp
   - npm install
