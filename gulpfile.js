@@ -121,12 +121,14 @@ gulp.task('build:copy', ['build:clean'], function(){
 // task to removed unwanted build files
 // list all files and directories here that you don't want included
 gulp.task('build:remove', ['build:copy'], function () {
-    del([
+    del([    
     'build/jade',
-    'build/css/!(*.min.css)',
-    'build/css/!vendor',
-    'build/js/!(*.min.js)',
-    'build/js/!vendor',
+    'build/css/*.scss',
+    'build/css/grids/',
+    '!build/css/vendor/',
+    '!build/css/*.min.css',
+    '!build/css/vendor/',
+    '!build/js/*.min.js',
     'build/bower_components',
     'build/libs'
     // 'build/libs/normalize-scss'
