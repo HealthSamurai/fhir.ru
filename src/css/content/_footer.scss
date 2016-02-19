@@ -1,0 +1,63 @@
+// FOOTER
+.prefooter {
+  background-color:$white;
+  .pseudoline {
+    display: block;
+  }
+  .hs-logo {
+  	padding-top: 40px;
+  	width: 170px;
+  }
+  .hs-icons {
+    padding:100px 40px 0 0;
+    font-family: 'Opensans-light', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    .links  {
+      .icon-link {
+        color: $black;
+        font-size: 32px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+  
+  .hs-link {
+    text-decoration: none;
+  }
+  .hs-link:hover {
+
+  }
+
+  .copyright,
+  .hs-team {
+	color: $black;
+  }
+  .copyright {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .hs-team {
+    font-family: 'Museo-500', Arial, sans-serif;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed $black;
+    &:hover {
+      color: $pink;
+      border-bottom: 1px dashed;
+    }
+  }
+}
+
+
+.footer {
+	// padding-top:220px;
+
+	background-color:$dark-gray;
+	color: $white;
+	font-size:16px;
+	padding: 20px 0;
+}

@@ -1,0 +1,50 @@
+// PERSONS RU
+.persons-ru {
+	background-color: $white;
+	padding: 110px 0 50px 120px;
+	.text-title {
+		padding-bottom: 30px;
+	}
+	.personru-btext {
+		font-family: 'Opensans-light';
+		font-size: 16px;
+		width: 450px;
+		line-height: 24px;
+		padding-bottom: 15px;
+		// text-align: justify;
+	}
+	.hl7-btext {	
+		font-family: 'Opensans-light';
+		font-size: 15px;
+		width: 400px;
+		line-height: 21px;
+		// text-align: justify;
+	}
+		
+	.personru-box {
+		padding: 10px 0;
+		.media {
+			padding-bottom: 10px;
+			.personru-img {
+				width: 65px;
+				filter: grayscale(40%);
+				border: 3px solid $yell-bg;
+				}
+				.media-heading {
+					font-family: 'Museo-500';
+					font-size: 16px;	
+				}
+			 .media-text {
+				font-family: 'Opensans-light';
+				font-size: 14px;
+				color: $_7;
+			 }
+		}
+	}
+	.second-title {
+		padding-bottom: 10px;
+	}
+	#twitter iframe {
+		height: 640px !important;
+	}
+}

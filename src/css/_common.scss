@@ -1,6 +1,22 @@
+// COMMON
+body {
+	background-color: $white;
+}
+
 .text-title {
-	color:$red;
-	font-size: 18px;
-	padding-bottom: 20px;
-	padding-left:15px;
+	font-family: 'Merriweather-bold';
+	font-size: 28px;
+	line-height: 38px;
+	// padding-bottom: 20px;
+	// padding-left:15px;
+	// max-width:360px;
+
+	// -webkit-font-smoothing: antialiased;
+	// font-smooth: always;
+}
+
+// VIDEO
+.video-intro {
+	background-color:$more-deep-red;
+	padding: 25px 0;
 }

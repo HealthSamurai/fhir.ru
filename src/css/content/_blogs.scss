@@ -1,0 +1,34 @@
+// BLOGS
+.blogs {
+	margin-top: 100px;
+	padding: 50px;
+	background-color: $yell-bg;
+
+	.text-title {
+		padding-left: 65px;
+		padding-bottom: 45px;
+	}
+	.blog-box {
+		padding-left: 60px;
+		padding-bottom: 20px;
+	}
+	.blog-header {
+		font-family: 'Museo-500';
+		font-size: 19px;
+		display: block;
+		padding-bottom: 3px;
+
+		text-decoration: none;
+		color: #555;
+		// border-bottom: 1px dotted;
+		&:hover {
+			color:$pink;
+		}
+	}
+	.blog-btext {
+		font-family: 'Helvetica-light';
+		font-size: 14px;
+		letter-spacing: 1px;
+		color:$_7;
+	}
+}

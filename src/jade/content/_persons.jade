@@ -1,98 +1,79 @@
 .persons
-  .container
+  .container.test
     .row
-      a(name="community")
-      h5.text-title.pull-left Редакционная команда HL7® FHIR®
-      a.link-title.pull-right.text-muted(href="http://fhir-ru.github.io/credits.html", target="_blank") Сообщество и благодарности
-    .row
-      //- 1ST COL
-      .col-md-4
 
+      //- left collumn
+      .col-md-6.core-persons
+        //- img.team-icon(src="img/team-icon.svg" alt="...")
+        img.team-icon(src="img/eye-icon.svg" alt="...")
+        p.text-title Редакционная 
+          br
+          | команда HL7® FHIR®
+        p.core-team Core Team
+        
+        //- Грэм Грив
         .person-box
           .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/graham.png" alt="...")
-              .core-team core team
+            .media-left(href="#")
+              img.border.img-rounded.img-persons(src="img/graham.png" alt="...")
             .media-body
               h4.media-heading Грэм Грив
-              p.text-mute Создатель FHIR, консультант, разработчик, основатель компании "Healthcare Interoperability". Был председателем комитета HL7.
-        
+              p.text-mute Создатель FHIR, консультант, разработчик. Был председателем комитета HL7.
+
+        //- Ллойд МакКензи
         .person-box
           .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/josh.png" alt="...")
-              .core-team core team
+            .media-left(href="#")
+              img.border.img-rounded.img-persons(src="img/lloyd.png" alt="...")
+            .media-body
+              h4.media-heading Ллойд Маккензи
+              p.text-mute Разработчик, эксперт в области моделирования и передачи данных HL7.
+        
+        //- Эвут Крамер
+        .person-box
+          .media
+            .media-left(href="#")
+              img.border.img-rounded.img-persons(src="img/evout.png" alt="...")
+            .media-body
+              h4.media-heading Эвут Крамер
+              p.text-mute Архитектор в области моделирования и обмена медицинскими данными.
+        
+        //- Джош Манедел
+        .person-box
+          .media
+            .media-left(href="#")
+              img.border.img-rounded.img-persons(src="img/josh.png" alt="...")
             .media-body
               h4.media-heading Джош Мандел
               p.text-mute Врач, программист, ведущий архитектор платформы SMART.
-          
-        .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/rene.png" alt="...")
-            .media-body
-              h4.media-heading Рене Спронк
-              p.text-mute Оказание образовательных услуг по стандартам взаимодействия в здравоохранении.
-      
-      //- 2ND COL
-      .col-md-4
-
-        .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/lloyd.png" alt="...")
-              .core-team core team
-            .media-body
-              h4.media-heading Ллойд Маккензи
-              p.text-mute Разработчик с экспертизой в моделировании данных HL7 и проектировании моделей данных.
-              
-         .person-box  
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/james.png" alt="...")
-            .media-body
-              h4.media-heading Джеймс Агню
-              p.text-mute Активно участвует в HL7 и разработке проекта HAPI.
-
-        .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/david.png" alt="...")
-            .media-body
-              h4.media-heading Дэвид Хэй
-              p.text-mute Позиционирует себя "евангелистом FHIR" ("фанатиком FHIR"), работает в компании "Orion Health" и HL7 Новая Зеландия.
-        
         
       
-      //- 3RD COL
-      .col-md-4
+      //- right collumn
+      .col-md-5.others-persons
         
+        //- Джеймс Агню
+        .person-box  
+          p.media-heading Джеймс Агню
+          p.text-others Активно участвует в HL7 и разработке java-библиотеки для FHIR - HAPI.
+        
+        //- Брайан Постлетвэйт
         .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/evout.png" alt="...")
-              .core-team core team
-            .media-body
-              h4.media-heading Эвут Крамер
-              p.text-mute Архитектор и инженер-программист. Консультирование и коучинг команд в области моделирования и обмена сообщениями.
-        
-        
-        
-              
+          p.media-heading Брайан Постлетвэйт
+          p.text-others Имеет многолетний опыт работы в различных средах.
+
+        //- Рене Спронк
         .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/ben.png" alt="...")
-            .media-body
-              h4.media-heading Брайан Постлетвэйт
-              p.text-mute Имеет многолетний опыт работы в различных средах.
-        
+          p.media-heading Рене Спронк
+          p.text-others Оказывает образовательные услуги в сфере здравоохранения.
+
+        //- Дэвид Хэй
         .person-box
-          .media
-            a.media-left(href="#")
-              img.border.img-rounded(src="img/vien.png" alt="...")
-            .media-body
-              h4.media-heading Вьет Нгуен
-              p.text-mute Терапевт, педиатр, специалист в области медицинской информатики.
-              
-include ./_video.jade
+          p.media-heading Дэвид Хэй
+          p.text-others «Евангелист FHIR», работает в компании «Orion Health» и HL7 Новая Зеландия.
+        
+        //- Вьет Нгуен
+        .person-box
+          p.media-heading Вьет Нгуен
+          p.text-others Терапевт, педиатр, специалист в области медицинской
+
+      .col-md-1.design-box
