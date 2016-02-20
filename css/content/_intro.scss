@@ -1,0 +1,77 @@
+// INTRO
+// #intro {
+// 	background: $white url(../img/bg-blur.png) fixed;
+// }
+
+.intro {
+	padding: 40px 0 120px 0;
+	background-color:$white;
+
+	.intro-text {
+		font-family: 'Helvetica-ultra';
+		font-size: 30px;
+		line-height: 35px;
+		padding-bottom: 10px;
+		text-align: left;
+		color: $_7;
+		letter-spacing: 1px;
+	}
+	
+	.intro-box {
+		padding-top: 20px;
+		padding-bottom: 40px;
+			.intro-img {
+				display: block;
+				margin: 0 auto;
+				width: 140px;
+				padding-bottom: 10px;
+
+				transition: 0.3s ease;
+				filter: brightness(1);
+				&:hover {
+					filter: brightness(0.7);
+				}
+			}
+
+
+			.img-text {
+				font-family: 'Museo-500';
+				font-size: 18px;
+				text-align: center;
+				line-height: 24px;
+				color: $black;
+				text-decoration: none;
+
+				transition: 0.4s ease;
+			&:hover {
+				color: $_A5;
+			}
+		}
+	}
+	
+	.fhir-box {
+		padding-left: 40px;
+		.fhir-rutext {
+			font-family: 'Museo-500';
+			font-size: 18px;
+			width: 500px;
+		}
+
+		.intro-btext {
+			font-family: 'Opensans-light';
+			width: 420px;
+			font-size: 16px;
+			color: $_7;
+		}
+	}
+	// .intro-buttons {
+	// 	text-align: center;
+	// 	padding-top: 18px;
+
+	// 	.btn {
+	// 		padding-top: 10px;
+	// 		margin-right: 30px;
+	// 	}
+	// }
+
+}

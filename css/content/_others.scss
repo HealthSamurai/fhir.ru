@@ -1,0 +1,61 @@
+// OTHERS
+// parallax.js
+// .parallax {
+// 	background-color: $yell-bg;
+// }
+
+
+#bg {
+	position: absolute;
+	padding-top: 100px;
+	// background: $yell-bg url(../img/bg-move.png) no-repeat fixed;
+	// height: 433px;
+	left: 50%;
+    transform: translate(-50%, 0);
+     #l1 {
+ 	// background: $yell-bg url(../img/bg-test.png) no-repeat fixed;
+ 	position: relative;
+ 	z-index: 10;
+ 	// margin: 0 auto;
+ 	// padding-left: 5%;
+ 	// padding-top: 20px;
+ }	
+}
+ 
+// stellar.js
+#bg-bottom {
+	// background: $yell-bg url(../img/bg.png) fixed;
+	height: 800px;
+	// background-size:cover;
+	background-attachment: fixed;
+}
+
+// .bg-pic {
+// 	background-attachment: fixed;
+// 	// min-width: 50%;
+// 	min-height: 300px;
+// 	position: relative;
+// }
+
+// .stellar-ratio {
+// 	text-align: center;
+// 	padding: 40px;
+// 	background-color: rgba(0,0,0,0.4);
+// 	color: white;
+// 	margin-top:10px;
+// }
+
+// end parallax
+
+// REFERENSER (SERVERS)
+.refs {
+	padding-bottom: 100px;
+}
+
+// MEDIUM
+.medium {
+	.medium-box {
+		padding: 10px;
+		padding-top: 50px;
+	}
+}

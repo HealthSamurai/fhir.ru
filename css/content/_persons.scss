@@ -1,0 +1,102 @@
+// PERSONS
+.persons {
+	// padding: 125px 0 65px 0;
+	background-color: $yell-bg;
+	// width: 500px;
+	// box-shadow: -1px -1px 5px -5px;
+
+	.test {
+		background-color: $white;
+
+	}
+	.core-persons {
+		background-color: $yell-bg;
+		border-radius: 0 60px 60px 0;
+		padding: 125px 0 65px 0;
+
+	}
+
+	.others-persons {
+		padding-left: 90px;
+		padding-top: 125px;
+		background-position: right bottom;
+	}
+
+	.person-box {
+		padding-bottom: 60px;
+		padding-left: 10px;
+	}
+	.text-title {
+		padding-bottom:5px;
+		display: inline-block;
+	}
+	.team-icon {
+		// padding-top:25px;
+		// padding-right:25px;
+		margin-right: 15px;
+		width: 73px;
+		display: inline;
+		margin-top: -47px;
+	}
+	.img-persons {
+		filter: grayscale(100%) opacity(40%);
+		width: 55px;
+		border: 2px $white solid;
+	}
+	
+	.media-heading {
+		font-family: 'Museo-500';
+			font-size: 18px;
+			letter-spacing: 0.8px;
+			padding-bottom:14px;
+			// color:$red;
+	}
+
+	.link-title {
+		padding-top: 15px;
+		margin-right: 15px;
+		border-bottom: 1px dotted;
+		text-decoration: none;
+		&:hover {
+			color: $red;
+		}
+	}
+	.border {
+		// border:1px solid $white;
+	}
+
+	.text-mute {
+			color: $_8;
+			font-family: 'Opensans-light';
+			font-size: 16px;
+			width: 350px;
+		}
+
+		.text-others {
+			color: $_82;
+			font-family: 'Opensans-light';
+			font-size: 14px;
+			width: 270px;
+		}
+
+		.media-body {
+			padding-left:10px;
+		}
+		.core-team {
+			font-family: 'Museo-500';
+			font-size: 18px;
+			letter-spacing: 0.8;
+			padding-bottom: 40px;
+			padding-left:85px;
+			color:$red;
+	}
+	.colored {
+		background-color: $white;
+	}
+}
+
+.design-box {
+	background-color: $yell-bg;
+	height: 964px;
+	border-radius: 60px 0 0 60px;
+}
